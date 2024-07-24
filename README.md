@@ -1,9 +1,31 @@
+![picasion com_d179905107c2dc7a7d599cdb9355aab4](https://github.com/user-attachments/assets/539d6aa3-f526-4f39-ae1d-8c96343cfae4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Welcome to your Expo app 👋
-
-
-![picasion com_c09260080f9ca26358e38498cf484079](https://github.com/user-attachments/assets/d2c06302-12a5-4e23-b62b-51295bb04056)
-
-
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
