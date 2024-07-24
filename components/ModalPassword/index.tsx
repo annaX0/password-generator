@@ -1,5 +1,7 @@
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import * as Clipboard from "expo-clipboard";
+import useStorage from "@/hooks/useStorage";
+import Passwords from "@/app/(tabs)/passwords";
 export default function ModalPassword({
   password,
   close,
@@ -7,9 +9,21 @@ export default function ModalPassword({
   password: string;
   close: (value: boolean) => void;
 }) {
+  const { saveItem } = useStorage();
+
   async function handleCopy() {
     await Clipboard.setStringAsync(password);
     alert("Senha copiada com sucesso");
+
+    await saveItem("@pass", password);
+    close(false);
+  }
+
+  async function handleSave() {
+    await Clipboard.setStringAsync(password);
+    alert("Senha salva com sucesso");
+
+    await saveItem("@pass", password);
     close(false);
   }
   return (
@@ -25,7 +39,9 @@ export default function ModalPassword({
           <Text style={styles.btnBack} onPress={() => close(false)}>
             Voltar
           </Text>
-          <Text style={styles.btnSave}>Salvar senha</Text>
+          <Text style={styles.btnSave} onPress={handleSave}>
+            Salvar senha
+          </Text>
         </View>
       </View>
     </View>
