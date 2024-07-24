@@ -1,5 +1,9 @@
 # Welcome to your Expo app 👋
 
+
+![localhost_8081_(Pixel 7) (3)](https://github.com/user-attachments/assets/47e812e5-d84f-446d-8248-7d451fbf8b35)
+
+
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
 ## Get started
